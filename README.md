@@ -1,9 +1,5 @@
 # yektanetLogoWithHtmlCss
 
-Live demo : 
+<img src="https://user-images.githubusercontent.com/1634213/127743288-9f8a99f3-75d8-42c5-9a69-b47c661b7e18.jpg" height="500"/>
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/kiumad/embed/rNdzEPW?default-tab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/kiumad/pen/rNdzEPW">
-  Untitled</a> by Mohammad Mirfatemi (<a href="https://codepen.io/kiumad">@kiumad</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
+Live demo : https://codepen.io/kiumad/full/rNdzEPW
