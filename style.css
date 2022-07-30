@@ -8,6 +8,7 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10vw;
 }
 
 .wrapper {
@@ -29,63 +30,71 @@ body {
 
 .info span:nth-child(1) {
   color: black;
-  font-size: 35px;
+  font-size: 0.8em;
   font-weight: bold;
 }
 
 .info span:nth-child(2) {
   color: gray;
-  font-size: 22px;
+  font-size: 0.4em;
   font-weight: normal;
 }
 
 .holder {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 30vw;
+  aspect-ratio: 1;
+  font-size: 10vw;
 }
 
 .out1 {
   position: absolute;
   background: #231f20;
+  /*   background: red; */
   width: 100%;
   height: 100%;
-  clip-path: polygon(30% 0%,
-      70% 0%,
-      100% 30%,
-      100% 70%,
-      70% 100%,
-      30% 100%,
-      0% 70%,
-      0% 30%);
-  -moz-clip-path: polygon(30% 0%,
-      70% 0%,
-      100% 30%,
-      100% 70%,
-      70% 100%,
-      30% 100%,
-      0% 70%,
-      0% 30%);
-  -webkit-clip-path: polygon(30% 0%,
-      70% 0%,
-      100% 30%,
-      100% 70%,
-      70% 100%,
-      30% 100%,
-      0% 70%,
-      0% 30%);
-  -o-clip-path: polygon(30% 0%,
-      70% 0%,
-      100% 30%,
-      100% 70%,
-      70% 100%,
-      30% 100%,
-      0% 70%,
-      0% 30%);
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+  -moz-clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+  -webkit-clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+  -o-clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
   animation: out1 1.5s ease-out;
 }
-
-
 
 .out1::after {
   content: "";
@@ -118,68 +127,75 @@ body {
   width: 100%;
   height: 100%;
   background: #231f20;
-  clip-path: polygon(30% 0,
-      50% 15%,
-      70% 0,
-      75% 25%,
-      100% 30%,
-      85% 50%,
-      100% 70%,
-      75% 75%,
-      70% 100%,
-      50% 85%,
-      30% 100%,
-      25% 75%,
-      0 70%,
-      15% 50%,
-      0 30%,
-      25% 25%);
+  clip-path: polygon(
+    30% 0,
+    50% 15%,
+    70% 0,
+    75% 25%,
+    100% 30%,
+    85% 50%,
+    100% 70%,
+    75% 75%,
+    70% 100%,
+    50% 85%,
+    30% 100%,
+    25% 75%,
+    0 70%,
+    15% 50%,
+    0 30%,
+    25% 25%
+  );
 
-  -moz-clip-path: polygon(15% 50%,
-      25% 25%,
-      30% 5%,
-      50% 15%,
-      75% 25%,
-      95% 30%,
-      85% 50%,
-      75% 75%,
-      70% 95%,
-      50% 85%,
-      25% 75%,
-      5% 70%);
-  -webkit-clip-path: polygon(30% 0,
-      50% 15%,
-      70% 0,
-      75% 25%,
-      100% 30%,
-      85% 50%,
-      100% 70%,
-      75% 75%,
-      70% 100%,
-      50% 85%,
-      30% 100%,
-      25% 75%,
-      0 70%,
-      15% 50%,
-      0 30%,
-      25% 25%);
-  -o-clip-path: polygon(30% 0,
-      50% 15%,
-      70% 0,
-      75% 25%,
-      100% 30%,
-      85% 50%,
-      100% 70%,
-      75% 75%,
-      70% 100%,
-      50% 85%,
-      30% 100%,
-      25% 75%,
-      0 70%,
-      15% 50%,
-      0 30%,
-      25% 25%);
-
+  -moz-clip-path: polygon(
+    15% 50%,
+    25% 25%,
+    30% 5%,
+    50% 15%,
+    75% 25%,
+    95% 30%,
+    85% 50%,
+    75% 75%,
+    70% 95%,
+    50% 85%,
+    25% 75%,
+    5% 70%
+  );
+  -webkit-clip-path: polygon(
+    30% 0,
+    50% 15%,
+    70% 0,
+    75% 25%,
+    100% 30%,
+    85% 50%,
+    100% 70%,
+    75% 75%,
+    70% 100%,
+    50% 85%,
+    30% 100%,
+    25% 75%,
+    0 70%,
+    15% 50%,
+    0 30%,
+    25% 25%
+  );
+  -o-clip-path: polygon(
+    30% 0,
+    50% 15%,
+    70% 0,
+    75% 25%,
+    100% 30%,
+    85% 50%,
+    100% 70%,
+    75% 75%,
+    70% 100%,
+    50% 85%,
+    30% 100%,
+    25% 75%,
+    0 70%,
+    15% 50%,
+    0 30%,
+    25% 25%
+  );
 }
 
 .out2::after {
@@ -201,38 +217,46 @@ body {
   width: 100%;
   height: 100%;
   background: #231f20;
-  clip-path: polygon(50% 15%,
-      75% 25%,
-      85% 50%,
-      75% 75%,
-      50% 85%,
-      25% 75%,
-      15% 50%,
-      25% 25%);
-  -moz-clip-path: polygon(50% 15%,
-      75% 25%,
-      85% 50%,
-      75% 75%,
-      50% 85%,
-      25% 75%,
-      15% 50%,
-      25% 25%);
-  -webkit-clip-path: polygon(50% 15%,
-      75% 25%,
-      85% 50%,
-      75% 75%,
-      50% 85%,
-      25% 75%,
-      15% 50%,
-      25% 25%);
-  -o-clip-path: polygon(50% 15%,
-      75% 25%,
-      85% 50%,
-      75% 75%,
-      50% 85%,
-      25% 75%,
-      15% 50%,
-      25% 25%);
+  clip-path: polygon(
+    50% 15%,
+    75% 25%,
+    85% 50%,
+    75% 75%,
+    50% 85%,
+    25% 75%,
+    15% 50%,
+    25% 25%
+  );
+  -moz-clip-path: polygon(
+    50% 15%,
+    75% 25%,
+    85% 50%,
+    75% 75%,
+    50% 85%,
+    25% 75%,
+    15% 50%,
+    25% 25%
+  );
+  -webkit-clip-path: polygon(
+    50% 15%,
+    75% 25%,
+    85% 50%,
+    75% 75%,
+    50% 85%,
+    25% 75%,
+    15% 50%,
+    25% 25%
+  );
+  -o-clip-path: polygon(
+    50% 15%,
+    75% 25%,
+    85% 50%,
+    75% 75%,
+    50% 85%,
+    25% 75%,
+    15% 50%,
+    25% 25%
+  );
   animation: out2 1s ease-out;
 }
 
@@ -255,7 +279,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 96px;
+  font-size: 1em;
   font-weight: bold;
 }
 
@@ -270,45 +294,36 @@ body {
     content: "10";
     opacity: 0.1;
   }
-
   10% {
     content: "9";
     opacity: 0.1;
   }
-
   20% {
     content: "8";
     opacity: 0.1;
   }
-
   30% {
     content: "7";
     opacity: 0.1;
   }
-
   40% {
     content: "6";
     opacity: 0.1;
   }
-
   60% {
     content: "5";
     opacity: 0.1;
   }
-
   70% {
     content: "4";
     opacity: 0.1;
   }
-
   80% {
     content: "3";
   }
-
   90% {
     content: "2";
   }
-
   100% {
     content: "1";
     opacity: 1;
@@ -321,6 +336,8 @@ body {
   height: 100%;
   border-radius: 50%;
   animation: out1 1.5s ease-out;
+  /*   animation: mymove 4s; */
+  /*   display: none; */
 }
 
 .dots-base2 {
@@ -331,7 +348,7 @@ body {
   animation: out2 1s ease-out;
 }
 
-.dots-base>* {
+.dots-base > * {
   position: absolute;
   width: 8%;
   height: 8%;
@@ -340,91 +357,93 @@ body {
   z-index: 200;
 }
 
-.dots-base2>* {
+.dots-base2 > * {
   position: absolute;
   width: 8%;
   height: 8%;
   border-radius: 50%;
   background: #231f20;
   z-index: 200;
+
+  /*   background: red; */
 }
 
-.dots-base>*:nth-child(1) {
+.dots-base > *:nth-child(1) {
   left: 27%;
   top: -1%;
 }
 
-.dots-base>*:nth-child(2) {
+.dots-base > *:nth-child(2) {
   left: 65%;
   top: -1%;
 }
 
-.dots-base>*:nth-child(3) {
+.dots-base > *:nth-child(3) {
   left: 94%;
   top: 26%;
 }
 
-.dots-base>*:nth-child(4) {
+.dots-base > *:nth-child(4) {
   left: 94%;
   top: 65%;
 }
 
-.dots-base>*:nth-child(5) {
+.dots-base > *:nth-child(5) {
   left: 65%;
   top: 94%;
 }
 
-.dots-base>*:nth-child(6) {
+.dots-base > *:nth-child(6) {
   left: 26%;
   top: 94%;
 }
 
-.dots-base>*:nth-child(7) {
+.dots-base > *:nth-child(7) {
   left: -2%;
   top: 64%;
 }
 
-.dots-base>*:nth-child(8) {
+.dots-base > *:nth-child(8) {
   left: -2%;
   top: 27%;
 }
 
-.dots-base2>*:nth-child(1) {
+.dots-base2 > *:nth-child(1) {
   left: 12%;
   top: 46%;
 }
 
-.dots-base2>*:nth-child(2) {
+.dots-base2 > *:nth-child(2) {
   left: 22%;
   top: 22%;
 }
 
-.dots-base2>*:nth-child(3) {
+.dots-base2 > *:nth-child(3) {
   left: 46%;
   top: 12%;
 }
 
-.dots-base2>*:nth-child(4) {
+.dots-base2 > *:nth-child(4) {
   left: 70%;
   top: 22%;
 }
 
-.dots-base2>*:nth-child(5) {
+.dots-base2 > *:nth-child(5) {
   left: 79%;
   top: 45%;
 }
 
-.dots-base2>*:nth-child(6) {
+.dots-base2 > *:nth-child(6) {
   left: 70%;
   top: 70%;
 }
 
-.dots-base2>*:nth-child(7) {
+.dots-base2 > *:nth-child(7) {
   left: 45%;
   top: 79%;
 }
 
-.dots-base2>*:nth-child(8) {
+.dots-base2 > *:nth-child(8) {
   left: 22%;
   top: 70%;
 }
@@ -439,7 +458,6 @@ body {
   -webkit-clip-path: polygon(50% 0, 100% 100%, 0 100%);
   -o-clip-path: polygon(50% 0, 100% 100%, 0 100%);
   animation: fade 2.2s;
-
 }
 
 .triangle-base {
@@ -447,9 +465,11 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  /*   top: 1.5%;
+  left: 1.5%; */
 }
 
-.triangle-base>*::after {
+.triangle-base > *::after {
   content: "";
   position: absolute;
   width: 20%;
@@ -461,7 +481,7 @@ body {
   transform: translateX(-50%);
 }
 
-.triangle-base>*:nth-child(1) {
+.triangle-base > *:nth-child(1) {
   left: 27%;
   top: 6%;
   transform: rotate(291deg);
@@ -470,7 +490,7 @@ body {
   -o-transform: rotate(291deg);
 }
 
-.triangle-base>*:nth-child(2) {
+.triangle-base > *:nth-child(2) {
   left: 57%;
   top: 6%;
   transform: rotate(20deg);
@@ -479,7 +499,7 @@ body {
   -o-transform: rotate(20deg);
 }
 
-.triangle-base>*:nth-child(3) {
+.triangle-base > *:nth-child(3) {
   left: 79%;
   top: 28%;
   transform: rotate(68deg);
@@ -488,7 +508,7 @@ body {
   -o-transform: rotate(68deg);
 }
 
-.triangle-base>*:nth-child(4) {
+.triangle-base > *:nth-child(4) {
   left: 79%;
   top: 58%;
   transform: rotate(110deg);
@@ -497,7 +517,7 @@ body {
   -o-transform: rotate(110deg);
 }
 
-.triangle-base>*:nth-child(5) {
+.triangle-base > *:nth-child(5) {
   left: 57%;
   top: 80%;
   transform: rotate(159deg);
@@ -506,7 +526,7 @@ body {
   -o-transform: rotate(159deg);
 }
 
-.triangle-base>*:nth-child(6) {
+.triangle-base > *:nth-child(6) {
   left: 27%;
   top: 80%;
   transform: rotate(202deg);
@@ -515,7 +535,7 @@ body {
   -o-transform: rotate(202deg);
 }
 
-.triangle-base>*:nth-child(7) {
+.triangle-base > *:nth-child(7) {
   left: 5%;
   top: 58%;
   transform: rotate(249deg);
@@ -524,7 +544,7 @@ body {
   -o-transform: rotate(249deg);
 }
 
-.triangle-base>*:nth-child(8) {
+.triangle-base > *:nth-child(8) {
   left: 5%;
   top: 28%;
   transform: rotate(291deg);
@@ -545,7 +565,7 @@ body {
   animation: fade 2.1s;
 }
 
-.yellow-triangle-base>*::after {
+.yellow-triangle-base > *::after {
   content: "";
   position: absolute;
   width: 35%;
@@ -562,9 +582,11 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  /*   top: -10%;
+  left: -17%; */
 }
 
-.yellow-triangle-base>*:nth-child(1) {
+.yellow-triangle-base > *:nth-child(1) {
   left: 9%;
   top: 16%;
   transform: rotate(135deg);
@@ -573,7 +595,7 @@ body {
   -o-transform: rotate(135deg);
 }
 
-.yellow-triangle-base>*:nth-child(2) {
+.yellow-triangle-base > *:nth-child(2) {
   left: 37%;
   top: 4%;
   transform: rotate(180deg);
@@ -582,7 +604,7 @@ body {
   -o-transform: rotate(180deg);
 }
 
-.yellow-triangle-base>*:nth-child(3) {
+.yellow-triangle-base > *:nth-child(3) {
   left: 64%;
   top: 16%;
   transform: rotate(225deg);
@@ -591,7 +613,7 @@ body {
   -o-transform: rotate(220deg);
 }
 
-.yellow-triangle-base>*:nth-child(4) {
+.yellow-triangle-base > *:nth-child(4) {
   left: 77%;
   top: 44%;
   transform: rotate(270deg);
@@ -600,7 +622,7 @@ body {
   -o-transform: rotate(270deg);
 }
 
-.yellow-triangle-base>*:nth-child(5) {
+.yellow-triangle-base > *:nth-child(5) {
   left: 65%;
   top: 72%;
   transform: rotate(315deg);
@@ -609,7 +631,7 @@ body {
   -o-transform: rotate(315deg);
 }
 
-.yellow-triangle-base>*:nth-child(6) {
+.yellow-triangle-base > *:nth-child(6) {
   left: 37%;
   top: 84%;
   transform: rotate(0deg);
@@ -618,7 +640,7 @@ body {
   -o-transform: rotate(0deg);
 }
 
-.yellow-triangle-base>*:nth-child(7) {
+.yellow-triangle-base > *:nth-child(7) {
   left: 8%;
   top: 72%;
   transform: rotate(44deg);
@@ -627,7 +649,7 @@ body {
   -o-transform: rotate(44deg);
 }
 
-.yellow-triangle-base>*:nth-child(8) {
+.yellow-triangle-base > *:nth-child(8) {
   left: -4%;
   top: 44%;
   transform: rotate(90deg);
@@ -635,12 +657,10 @@ body {
   -webkit-transform: rotate(90deg);
   -o-transform: rotate(44deg);
 }
-
 @keyframes out1 {
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
@@ -650,7 +670,6 @@ body {
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(-360deg);
   }
@@ -660,15 +679,12 @@ body {
   0% {
     opacity: 0;
   }
-
   50% {
     opacity: 0;
   }
-
   60% {
-    opacity: .2;
+    opacity: 0.2;
   }
-
   100% {
     opacity: 1;
   }
@@ -687,7 +703,8 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 10px 25px;
+  font-size: 0.3em;
+  padding: 1em 1.5em;
   margin: 0 10px;
   border-radius: 5px;
   transition: background-color 0.2s;
